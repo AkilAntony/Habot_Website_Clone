@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Button = ({text,styles}) => {
+const Button = ({text,styles,event}) => {
   return (
-    <button className={`${styles} rounded font-inter
-            p-3 text-center `}>
+    <button className={`${styles} rounded 
+            text-center `}
+          onClick={event}>
         {text}
     </button>
   )

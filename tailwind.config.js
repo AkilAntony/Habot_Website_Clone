@@ -6,8 +6,9 @@ module.exports = {
     extend: {
         colors: {
           customGreen: 'rgba(0, 115, 47, 1)',
-          frameButton:'rgba(235, 113, 80, 1)',
-          frameButtonText:'rgba(255, 255, 255, 1)',
+          sandyBrown:'rgba(235, 113, 80, 1)',
+          // frameButtonText:'rgba(255, 255, 255, 1)',
+          videoContainer:'rgba(7, 47, 87, 1)'
          },
         fontFamily: {
         poppins: ['Poppins'],

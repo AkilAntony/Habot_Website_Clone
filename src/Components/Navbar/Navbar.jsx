@@ -1,6 +1,6 @@
 
 import React,{useEffect, useState} from 'react'
-import './Navbar.css';
+import '../../Styles/Navbar.css';
 import logo from '../../Assets/habot-logo.jpg'
 import { Link } from 'react-router-dom';
 import Button from '../Button';
@@ -28,12 +28,12 @@ function Navbar() {
 
   return (
     <div className='navContainer justify-between flex items-center'>
-      <div className='logoContainer flex'>
+      <div className='logoContainer '>
         <img src={logo}
         alt="logo"
-        className='logo md:ml-16 ml-4 '/>
+        className='logo md:ml-20 ml-2 h-11 w-44 object-cover'/>
       </div>
-       
+      
       {/* Nav links */}
       <div className={`navLinksContainer items-center md:flex mr-16 gap-16
          menu ${isOpen ? "open" : ""} flex items-center md:gap-6  text-white `}
@@ -47,7 +47,7 @@ function Navbar() {
         </Link>
         <Link>
           <Button 
-            styles ='text font-bold h-12 w-48
+            styles ='text font-bold h-12 w-48 font-inter
              text-sm border-customGreen border border-solid'
             text = 'Login / Sign up'
             onClick={toggleMenu}
@@ -55,7 +55,7 @@ function Navbar() {
         </Link>
       </div>
       {isSmallScreen &&
-       <div className={`hamburger ${isOpen ? "open" : ""} mr-3`} onClick={toggleMenu}>
+       <div className={`hamburger ${isOpen ? "open" : ""} `} onClick={toggleMenu}>
             <div className="line"></div>
             <div className="line"></div>
             <div className="line"></div>
