@@ -1,14 +1,12 @@
 .mainContainer {
-  background-image: url("../Assets/banner.svg");
-  /* height: calc(100vh); */
-  height: calc(609px - 84px);
+  height: calc(100vh- 84px);
   width: 100%;
 }
-h1 {
+/* h1 {
   font-size: 55px;
   line-height: 66px;
 }
 h3 {
   line-height: 66px;
   font-size: 55px;
-}
+} */

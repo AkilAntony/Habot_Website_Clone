@@ -1,11 +1,10 @@
 import React,{useEffect, useState,useMemo, useCallback} from 'react'
 import '../../Styles/VideoBuyer.css';
-import Thumbnail from '../../Assets/thumbnail.svg';
-
 import VideoPlayer from './VideoPlayer'
 import Button from '../Button';
 import Buyer from './Buyer';
 import Supplier from './Supplier';
+
 function VideoBuyer() {
     const [supplier,setSupplier] =  useState(false);
     const [buyer,setBuyer] = useState(true);
@@ -24,7 +23,7 @@ function VideoBuyer() {
  
 return (
     <div className='videoBuyerContainer flex flex-wrap items-center justify-center 
-          rounded md:flex-row flex-col ml-2 mr-2 md:ml-20 md:mr-20'>
+          rounded md:flex-row flex-col ml-2 mr-2 md:ml-20 md:mr-20 '>
             {/* ml-2 mr-2 md:ml-20 md:mr-20 */}
         <div className='videoContainer rounded w-11/12 md:w-1/2 md:h-80'>
             <VideoPlayer/>

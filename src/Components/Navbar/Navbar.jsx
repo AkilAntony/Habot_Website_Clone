@@ -1,7 +1,8 @@
 
 import React,{useEffect, useState} from 'react'
 import '../../Styles/Navbar.css';
-import logo from '../../Assets/habot-logo.jpg'
+import Home from '../Home/Home';
+
 import { Link } from 'react-router-dom';
 import Button from '../Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -12,7 +13,7 @@ function Navbar() {
   const [isSmallScreen,setIsSmallScreen] = useState(window.innerWidth <= 768);
   const [isOpen, setIsOpen] = useState(false);
 
-  // this function gets called every user resize the screen
+  // this function gets called everytime user resize the screen
   const handleResize = () => {
     setIsSmallScreen(window.innerWidth <= 768);
   };
@@ -29,7 +30,7 @@ function Navbar() {
   return (
     <div className='navContainer justify-between flex items-center'>
       <div className='logoContainer '>
-        <img src={logo}
+        <img src='/Assets/habot-logo.jpg'
         alt="logo"
         className='logo md:ml-20 ml-2 h-11 w-44 object-cover'/>
       </div>
@@ -61,6 +62,7 @@ function Navbar() {
             <div className="line"></div>
         </div>
       }
+
     </div>
   ) 
 }

@@ -1,6 +1,6 @@
 import React from 'react'
-import '../../Styles/Frame.css'
-import Button from '../Button'
+import '../Styles/Frame.css'
+import Button from './Button'
 function Frame() {
   return (
     <div className='frameContainer flex md:flex-row
