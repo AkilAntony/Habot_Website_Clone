@@ -26,7 +26,7 @@ function Footer() {
             </div>
                 <div className='socialMedia w-52 flex justify-center gap-3
                         md:ml-auto'>
-               <Link><img src='/Assets/Linkedin.svg' /></Link> 
+               <Link><img src='/Assets/LinkedIn.svg' /></Link> 
                 <Link><img src='/Assets/Twitter.svg' /></Link> 
                  <Link><img src='/Assets/Facebook.svg' /></Link> 
                   <Link><img src='/Assets/Instagram.svg' /></Link> 
