@@ -6,7 +6,7 @@ function SignUp() {
   return (
     <div className='flex  flex-col md:flex-row justify-between'>
         <div className='font-poppins md:w-620 text-start
-                ml-3 mr-2 md:ml-20'>
+                ml-5 mr-3 md:ml-20'>
             <h2 className=' bold text-37.34
                  leading-10 font-bold'>
                 Ready to dive into HABOT?
@@ -33,7 +33,7 @@ function SignUp() {
             </div>
         </div>
         <div className='locationContainer md:w-541 rounded-5
-                flex flex-wrap  gap-3 mr-72 md:mr-20 mt-10 md:mt-5 justify-center
+                flex flex-wrap  gap-3 md:mr-20 mt-10 md:mt-5 justify-center
                 '>
             <Place placeName='Abu Dhabi'/>
             <Place placeName='Dubai'/>

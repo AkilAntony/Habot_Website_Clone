@@ -1,6 +1,6 @@
 
 import React,{useEffect, useState} from 'react'
-import '../../Styles/Navbar.css';
+import './Navbar.css';
 import Home from '../Home/Home';
 
 import { Link } from 'react-router-dom';
@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown} from '@fortawesome/free-solid-svg-icons'
 
 
-function Navbar() {
+function Navbar({isNavbarOpen,setIsNavbarOpen}) {
   const [isSmallScreen,setIsSmallScreen] = useState(window.innerWidth <= 768);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -25,6 +25,8 @@ function Navbar() {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    setIsNavbarOpen(!isNavbarOpen)
+
   };
 
   return (

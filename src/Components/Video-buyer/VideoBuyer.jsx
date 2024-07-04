@@ -1,5 +1,4 @@
 import React,{useEffect, useState,useMemo, useCallback} from 'react'
-import '../../Styles/VideoBuyer.css';
 import VideoPlayer from './VideoPlayer'
 import Button from '../Button';
 import Buyer from './Buyer';
@@ -23,15 +22,15 @@ function VideoBuyer() {
  
 return (
     <div className='videoBuyerContainer flex flex-wrap items-center justify-center 
-          rounded md:flex-row flex-col ml-2 mr-2 md:ml-20 md:mr-20 '>
+          rounded md:flex-row flex-col ml-2 mr-2 md:ml-20 md:mr-20 bg-darkBlue h-623'>
             {/* ml-2 mr-2 md:ml-20 md:mr-20 */}
         <div className='videoContainer rounded w-11/12 md:w-1/2 md:h-80'>
             <VideoPlayer/>
         </div>
 
-        <div className='gap-7 buyer-supplier flex flex-col justify-center'>
+        <div className='gap-7 buyer-supplier flex flex-col justify-center max-w-461'>
             <div className=' flex justify-around  items-center text-white 
-                 '>
+                 mt-6'>
                 <Button
                     text="Buyer"
                     styles={`border-b-2 ${buyer ? 'border-sandyBrown' : 'border-none'} cursor-pointer px-6 pb-2  font-poppins text-2xl ${buyer ? 'text-sandyBrown' : ''} font-bold`}
@@ -45,7 +44,7 @@ return (
             
             </div>
             <div className='resultContainer flex flex-col 
-                    justify-start items-start pt-7'>
+                    justify-start items-start pt-4 '>
                 {buyer && 
                     <Buyer />
                 }

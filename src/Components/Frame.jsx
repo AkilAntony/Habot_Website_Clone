@@ -1,10 +1,9 @@
 import React from 'react'
-import '../Styles/Frame.css'
 import Button from './Button'
 function Frame() {
   return (
-    <div className='frameContainer flex md:flex-row
-            justify-around items-center flex-col'>
+    <div className='frameContainer flex md:flex-row bg-customCyan
+            justify-around items-center flex-col h-254'>
         {/* <div> */}
             <div className="textCotainer -mb-9 md:-mb-0 font-poppins mr-4 ml-4">
                 <p className='font-bold text-4xl leading-10'>
