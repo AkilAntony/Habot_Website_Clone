@@ -16,10 +16,6 @@ const Buyer = ()=>{
                 <img src='/Assets/checked.svg' alt="" className='flex-shrink-0 self-start mt-1' />
                 <p className='ml-2 flex-1 text-start'>Choose among the suppliers based on the ratings and reviews.</p>
            </div>
-   
-
-
-
         </div>
     )
 }

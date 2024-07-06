@@ -21,14 +21,14 @@ function VideoBuyer() {
     },[buyer,supplier])
  
 return (
-    <div className='videoBuyerContainer flex flex-wrap items-center justify-center 
+    <div className='videoBuyerContainer flex items-center justify-center 
           rounded md:flex-row flex-col ml-2 mr-2 md:ml-20 md:mr-20 bg-darkBlue h-623'>
             {/* ml-2 mr-2 md:ml-20 md:mr-20 */}
         <div className='videoContainer rounded w-11/12 md:w-1/2 md:h-80'>
             <VideoPlayer/>
         </div>
 
-        <div className='gap-7 buyer-supplier flex flex-col justify-center max-w-461'>
+        <div className='gap-7 buyer-supplier flex flex-col justify-center max-w-461 md:w-461'>
             <div className=' flex justify-around  items-center text-white 
                  mt-6'>
                 <Button

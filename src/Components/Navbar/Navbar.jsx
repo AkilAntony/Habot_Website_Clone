@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown} from '@fortawesome/free-solid-svg-icons'
 
 
-function Navbar({isNavbarOpen,setIsNavbarOpen}) {
+function Navbar() {
   const [isSmallScreen,setIsSmallScreen] = useState(window.innerWidth <= 768);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -25,8 +25,7 @@ function Navbar({isNavbarOpen,setIsNavbarOpen}) {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-    setIsNavbarOpen(!isNavbarOpen)
-
+  
   };
 
   return (

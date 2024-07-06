@@ -18,7 +18,6 @@ function Frame() {
                 font-bold w-56 h-14 text-white'
                 text='Get Verified'
             />
-        {/* </div> */}
     </div>
   )
 }

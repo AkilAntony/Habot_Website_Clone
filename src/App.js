@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import React,{useState} from 'react';
+
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import Frame from './Components/Frame';
@@ -9,14 +9,13 @@ import SignUp from './Components/SignUp/SignUp';
 import About from './Components/About/About';
 import Footer from './Components/Footer/Footer'
 function App() {
-  const [isNavbarOpen,setIsNavbarOpen] = useState(false)
   return (
     <div className="App">
         <header>
-        <Navbar isNavbarOpen={isNavbarOpen} setIsNavbarOpen={setIsNavbarOpen} />
+        <Navbar  />
       </header>
       <main>
-        <Home isNavbarOpen={isNavbarOpen} />
+        <Home  />
         <section className='py-24'>
           <SignUp />
         </section>

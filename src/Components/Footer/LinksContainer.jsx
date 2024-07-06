@@ -7,7 +7,6 @@ function LinksContainer({title,links}) {
                 {links.map((link,index)=>(
                     <Link key={index} className ='font-inter font-light text-sm leading-6'>{link}</Link>
                 ))}
-             
             </div>
   )
 }
