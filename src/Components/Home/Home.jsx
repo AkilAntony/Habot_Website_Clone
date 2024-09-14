@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <div className={`mainContainer flex flex-col items-center justify-center bg-cover h-[82vh] md:h-[90vh] `}
+    <div className={`mainContainer flex flex-col  items-center justify-center bg-cover h-[82vh] md:h-[90vh] `}
         style={{backgroundImage:"url('/Assets/banner.png')"}}
         >
         <div className='text-center text-white md:text-55 text-3xl 
@@ -14,7 +14,8 @@ function Home() {
           <h1 className='font-poppins font-bold '>Are You a Supplier?</h1>
           <h3 className='font-poppins font-normal '>Explore Matching Opportunities.</h3>
         </div>
-         <div className='flex gap-2 mt-10 md:flex-row flex-col items-center'>
+         <div className='flex gap-2 mt-10 flex-col items-center md:flex-wrap md:flex-col lg:flex-row
+         justify-center '>
           <InputField 
             type='text'
             placeholder='Search your required service here'

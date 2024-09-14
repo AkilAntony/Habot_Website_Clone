@@ -4,9 +4,9 @@ import LinksContainer from './LinksContainer'
 
 function Footer() {
   return (
-    <div className=' md:h-232 mx-w-1513 bg-customBlue flex items-center justify-center'>
-        <div className='md:h-155 w-1200 border-y border-lightWhite flex items-center gap-10 
-               flex-col md:flex-row py-5 md:py-0'>
+    <div className='md:h-232 max-w-full bg-customBlue flex items-center justify-center '>
+        <div className='md:min-h-4/6 w-1200 border-y border-lightWhite flex items-center gap-10 
+               flex-col md:flex-row py-5 md:py-5'>
             <div className='logoContainer flex flex-col   text-customWhite '>
                 <img src="/Assets/logo.svg " alt="logo" 
                  className='h-10 mdw-206 object-cover  ' />

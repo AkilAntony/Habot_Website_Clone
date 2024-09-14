@@ -4,7 +4,8 @@ import Card from './Card'
 function About() {
   return (
     <div className='ml-3 mr-2'>
-        <div className='font-poppins text-center md:w-839 m-auto '>
+        <div className='font-poppins text-center md:min-w-839 m-auto flex
+        flex-col'>
             <h2 className='font-bold text-37.34 leading-48 '>
                 How it works?
             </h2>
@@ -14,8 +15,8 @@ function About() {
                 and build successful business relationships, sharing valuable feedback.
             </p>
         </div>
-        <div className='md:h-508 md:w-1200 m-auto flex flex-wrap 
-                mt-16'>
+        <div className='md:min-h-508 md:w-full m-auto flex flex-wrap 
+                mt-16 items-center justify-center'>
             <Card icon ='/Assets/role.svg'
                content='Select Your Role and Sign Up'
                styles ='bg-customCyan' />
